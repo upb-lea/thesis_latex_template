@@ -1,0 +1,17 @@
+*.acn
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.glo
+*.idx
+*.lof
+*.log
+*.lot
+*.nlo
+*.out
+*.pdf
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdy
