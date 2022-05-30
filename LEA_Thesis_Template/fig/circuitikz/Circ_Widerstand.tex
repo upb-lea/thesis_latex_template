@@ -1,0 +1,36 @@
+\begin{center}
+\begin{circuitikz}
+	\draw
+	(0,0)
+	to [short,o-*] ++(0,-.5) coordinate(up1) 
+	(up1) to [short,-] ++(-1,0)  coordinate(up1l) 
+	(up1) to [short,-] ++(1,0)  coordinate(up1r)
+	(up1) ++(0,-2) coordinate(mid1o)
+	(mid1o) to [short,-] ++(-1,0)  coordinate(mid1ol) 
+	(mid1o) to [short,-] ++(1,0)  coordinate(mid1or)
+	(mid1o) to [short,*-*] ++(0,-.5) coordinate(mid1u) 
+	(mid1u) ++(0,-2) coordinate(down1)
+	(mid1u) to [short,-] ++(-1,0)  coordinate(mid1ul) 
+	(mid1u) to [short,-] ++(1,0)  coordinate(mid1ur)
+	(down1) to [short,-] ++(-1,0)  coordinate(down1l) 
+	(down1) to [short,-]  ++(1,0)  coordinate(down1r)
+	(down1) to [short,*-o] ++(0,-.5) 
+	(up1l) to [L,l^=$L$,v=$U_\text{L}$,mirror] (mid1ol)
+	(up1r) to [R=$R$] (mid1or)
+	(mid1ul) to [C,l_=$C$] (down1l)
+	(mid1ur) to [R=$R$] (down1r)
+
+        (5,0)
+	to [short,o-*] ++(0,-.5) coordinate(up2) 
+	(up2) to [short,-] ++(-1,0)  coordinate(up2l) 
+	(up2) to [short,-] ++(1,0)  coordinate(up2r)
+	(up2) ++(0,-4) coordinate(down2)
+	(down2) to [short,-] ++(-1,0)  coordinate(down2l) 
+	(down2) to [short,-]  ++(1,0)  coordinate(down2r)
+	(down2) to [short,*-o] ++(0,-.5) 
+	(up2l) to [R,l^=$R$,i=$i_\text{R}$] ++(0,-2) to  [C,l_=$C$] (down2l)
+	(up2r) to [R=$R$] ++(0,-2) to [L,l^=$L$] (down2r)
+	;
+\end{circuitikz}
+
+\end{center}

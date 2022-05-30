@@ -1,0 +1,42 @@
+%\documentclass[online, english]{LEAthesis}
+%\documentclass[deutsch]{LEAthesis}
+%\documentclass[online,english]{LEAthesis}
+\documentclass[online,english]{LEAthesis}
+
+\title{Really a Very Very Extremely Long Title for Such a Thesis}
+\shorttitle{Title in Short}
+\author{Me Myself}
+\thesistype{Master Thesis}
+\thesisnr{MA0815}
+\matrnr{08193784}
+\supervisora{Prof. Dr.-Ing. Joachim Böcker}
+\supervisorb{N.N.}
+\filingdate{\today}
+\bibliography{references.bib}
+
+\input{chapters/header}
+\input{chapters/acronyms.tex} %Place acronyms here
+\input{chapters/glossaries.tex} %Place glossary entries here
+
+\begin{document}
+
+\maketitle              
+
+\frontmatter
+    \makedeclaration
+    \input{chapters/abstract}
+    \tableofcontents
+    
+\mainmatter
+
+    \input{chapters/introduction.tex}
+    \input{chapters/status.tex}
+    \input{chapters/derivation.tex}
+    \input{chapters/evaluation.tex}
+    \input{chapters/summary.tex}
+
+\backmatter
+    
+    \input{chapters/appendix.tex}
+    \lists
+\end{document}

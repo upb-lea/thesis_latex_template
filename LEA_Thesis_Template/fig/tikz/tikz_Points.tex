@@ -1,0 +1,40 @@
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        domain=0:300,
+        xmin=0, xmax=300,
+        ymin=-1, ymax=2200,
+        samples=500,
+        axis y line=center,
+        axis x line=middle,
+        %xtick distance=1,
+        %ytick distance=1,
+        extra y ticks=0,
+        x label style={at={(axis description cs:0.5,-.075)},anchor=north},
+        y label style={at={(axis description cs:-.1,.5)},rotate=90,anchor=south},
+        xlabel={$t/\minute$},
+        ylabel={$u(t)/\watt$},
+        xtick={0, 90, 180, 195,  244,  259},
+        xticklabels={0, 90, 180, 195,  244,  259},
+        xticklabel style={rotate=90},
+        ytick={0,2000},
+        yticklabels={0,2000},
+        %yticklabels={$-2 u_0$,$-u_0$, $0$,$\frac{u_0}{2}$, $u_0$},
+        grid=both,
+        grid style={line width=.1pt, draw=gray!10},
+        major grid style={line width=.2pt,draw=gray!50},    ]
+        \addplot[color=blue,mark=none] coordinates{
+            ( 0,  2000)
+            (180,  2000)
+            (180,  0)
+            (195,  0)
+            (195,  2000)
+            (244,  2000)
+            (244,  0)
+            (259,  0)
+            (259,  2000)
+            (300,  2000)
+    };
+    \end{axis}
+\end{tikzpicture}
+\end{center}
