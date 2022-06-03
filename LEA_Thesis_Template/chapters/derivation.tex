@@ -1,19 +1,9 @@
-\chapter{Example Chapter using Formulars, Tables and Figures} 
+\chapter{Example Chapter using Formulas, Tables and Figures} 
 \label{cha:derivation}
-%In diesem Kapitel kann das Modell vorgestellt werden, was erarbeitet oder bearbeitet wurde.
-%%Purpose, Choice of NNs, Risk
 
-\section{Programming Framework}
-\label{sec:framework}
-Deciding for a framework one can choose from several options, each having its own characteristics...
-
-\section{Preprocessing and Feature Engineering}
+\section{Table reference}
 \label{sec:features}
-The data, which represents this work's investigative base, was gathered on a test bench having a three-phase \gls{pmsm} mounted with eight pole pairs.
-The sample frequency was set to half a second consistently throughout the entire measurement. 
-All parameters were received via first-order time-delay elements and a delay time $T_n$ of \SI{1.5}{\second}.
-Moreover, ...
-
+This is a table reference:
 \tabref{tab:params} summarizes the parameters taken into account.
 \begin{table}
 	\caption{Considered input and target parameters.}
@@ -39,8 +29,12 @@ Moreover, ...
 \end{table}
 
 
-\subsection{Normalization}
+\section{Formulas}
 \label{subsec:normalization}
+This is a in-text formula example. Note that the formulas are integrated in the text (full-stop after formula).
+
+Note: Using variables, the variable itself should be in italic letters, the subscript should be in normal letters. Space between count and unit! Make use of 'mathrm' and 'SI'. Example $V_\mathrm{DC} = \SI{100}{V}$. Some mathematical formulas can be also found throughout the document such as in \capref{subsec:normalization}.
+
 In this work, a simple normalization scheme is conducted.
 If $x^{(t)}$ denotes the true value of a parameter $X$ to the time $t$ and $\bar{x} = \mu(X) = \frac{1}{N}\sum\nolimits_{t, i} x^{(t)}_i$ represents the sample mean of this parameter over each considered profile $i\in I$ while the parameters' unbiased sample standard deviation is computed by $\sigma(X)=\sqrt{(N-1)^{-1}\sum\nolimits_{t, i} (x^{(t)}_i - \bar{x})^2}$, then the normalized value $x_\text{norm}$ is calculated by  
 \begin{equation}
@@ -60,9 +54,9 @@ Equations can also be aligned:
 
 In \eqref{eq:splitline} the equation was split into two lines. Use this for long equations.
 
-\section{Architecture}
+\section{Figures}
 \label{sec:architecture}
-According to \figref{fig:cnn}, the model topology comprises...
+Navigate to the code to see how \figref{fig:cnn} is included to the document. 
 
 \begin{figure}[htb]
 	\centering
