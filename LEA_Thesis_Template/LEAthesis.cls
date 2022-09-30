@@ -2,8 +2,7 @@
 %% Partitially based on svmono.cls and jku.cls
 %%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{LEAthesis}[2022/02/21 v01
-^^JLEA global LaTeX document class for theses]
+\ProvidesClass{LEAthesis}[2022/02/21 v01 LEA global LaTeX document class for theses]
 
 \LoadClass[12pt,twoside,a4paper]{book}
 
@@ -391,7 +390,7 @@ multi-part-units = repeat
 
 %% Verzeichnisse
 \makeindex
-\RequirePackage[xindy,acronym,shortcuts,nopostdot,nogroupskip,section,nonumberlist]{glossaries}
+\RequirePackage[acronym,shortcuts,nopostdot,nogroupskip,section,nonumberlist]{glossaries}
 \renewcommand*{\glsgroupskip}{}
 \makeglossaries
 

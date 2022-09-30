@@ -15,3 +15,16 @@
 *.synctex.gz
 *.toc
 *.xdy
+
+
+*.acr
+*.alg
+*.fdb_latexmk
+*.fls
+*.glg
+*.gls
+*.ilg
+*.ind
+*.ist
+*.nlg
+*.nls

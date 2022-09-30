@@ -1,12 +1,8 @@
 add_cus_dep( 'nlo', 'nls', 0, 'nlo2nls' );
-sub nlo2nls {return system( "makeindex -t \"$_[0].nlg\" -s \"internal/nomencl.ist\"   -o \"$_[0].nls\" \"$_[0].nlo\"" );}
-push @generated_exts, 'nlo', 'nls';
+sub nlo2nls {system( "makeindex -t \"$_[0].nlg\" -s \"internal/nomencl.ist\"   -o \"$_[0].nls\" \"$_[0].nlo\"" );}
 
-add_cus_dep( 'glo', 'gls', 0, 'glo2gls' );
-sub glo2gls {return system( "xindy -C din5007-utf8 -I xindy -M \"$_[0]\"  -t \"$_[0].glg\" -o \"$_[0].gls\" \"$_[0].glo\"" );}
-push @generated_exts, 'glo', 'gls';
-
-
-add_cus_dep( 'acn', 'acr', 0, 'acn2acr' );
-sub acn2acr {return system( "xindy -C din5007-utf8 -I xindy -M \"$_[0]\"  -t \"$_[0].acl\" -o \"$_[0].acr\" \"$_[0].acn\"" );}
-push @generated_exts, 'acn', 'acr';
+add_cus_dep('glo', 'gls', 0, 'makeglo2gls');
+add_cus_dep('acn', 'acr', 0, 'makeglo2gls');
+sub makeglo2gls {
+        system("makeglossaries $_[0]");
+}
