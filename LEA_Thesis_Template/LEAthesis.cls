@@ -186,7 +186,7 @@
 free-standing-units, 
 space-before-unit, 
 number-unit-product = \,, 
-output-decimal-marker = {,}
+output-decimal-marker = {,},
 per-mode=fraction,
 separate-uncertainty = true,
 multi-part-units = repeat
