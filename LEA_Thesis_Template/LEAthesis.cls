@@ -1,8 +1,8 @@
-% LEA-thesis DOCUMENT CLASS -- version 0.1 (21.02.22)
+% LEA-thesis DOCUMENT CLASS -- version 1.1 (18.08.23)
 %% Partitially based on svmono.cls and jku.cls
 %%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{LEAthesis}[2022/02/21 v01 LEA global LaTeX document class for theses]
+\ProvidesClass{LEAthesis}[2023/08/12 v11 LEA global LaTeX document class for theses]
 
 \LoadClass[12pt,twoside,a4paper]{book}
 
@@ -10,10 +10,14 @@
 \newif\ifdeutsch
 \newif\ifenglish
 \newif\ifonline
+\newif\ifdiss
+\newif\iffinal
 
 \DeclareOption{english}{\englishtrue}
 \DeclareOption{deutsch}{\deutschtrue}
 \DeclareOption{online}{\onlinetrue}
+\DeclareOption{diss}{\disstrue}
+\DeclareOption{final}{\finaltrue}
 
 \ProcessOptions\relax
 
@@ -24,12 +28,17 @@
 \DeclareRobustCommand*{\shorttitle}[1]{\gdef\@shorttitle{#1}}
 \DeclareRobustCommand*{\author}[1]{\gdef\@author{#1}}
 \DeclareRobustCommand*{\date}[1]{\gdef\@date{#1}}
-\DeclareRobustCommand*{\thesistype}[1]{\gdef\@thesistype{#1}}
-\DeclareRobustCommand*{\matrnr}[1]{\gdef\@matrnr{#1}}
+\ifdiss\else\DeclareRobustCommand*{\thesistype}[1]{\gdef\@thesistype{#1}}\fi
+\ifdiss\else\DeclareRobustCommand*{\matrnr}[1]{\gdef\@matrnr{#1}}\fi
 \DeclareRobustCommand*{\supervisora}[1]{\gdef\@supervisora{#1}}
 \DeclareRobustCommand*{\supervisorb}[1]{\gdef\@supervisorb{#1}}
-\DeclareRobustCommand*{\thesisnr}[1]{\gdef\@thesisnr{#1}}
-\DeclareRobustCommand*{\filingdate}[1]{\gdef\@filingdate{#1}}
+\ifdiss\else\DeclareRobustCommand*{\thesisnr}[1]{\gdef\@thesisnr{#1}}\fi
+\ifdiss\else\DeclareRobustCommand*{\filingdate}[1]{\gdef\@filingdate{#1}}\fi
+\ifdiss\DeclareRobustCommand*{\birthdate}[1]{\gdef\@birthdate{#1}}\fi
+\ifdiss\DeclareRobustCommand*{\birthplace}[1]{\gdef\@birthplace{#1}}\fi
+\ifdiss\DeclareRobustCommand*{\examdate}[1]{\gdef\@examdate{#1}}\fi
+\ifdiss\DeclareRobustCommand*{\publicationyear}[1]{\gdef\@publicationyear{#1}}\fi
+\ifdiss\DeclareRobustCommand*{\thesisnr}[1]{\gdef\@thesisnr{#1}}\fi
 %
 
 %% Language phrases
@@ -84,7 +93,7 @@
 \def\subclassname{{\it Subject Classifications\/}:}%
 \def\supervisor{Supervisor}%
 \def\tablename{Tab.}%
- \def\thesisnrname{Thesis Nr.}%
+\def\thesisnrname{Thesis Nr.}%
 \def\theoremname{Theorem}%
 \def\titledepartment{Department of Power Electronics and Electrical Drives}%
 \def\titleinstitute{Institute of Electrical Engineering and Information Technology}%
@@ -181,6 +190,7 @@
 \RequirePackage{amscd}									% Erstellen einafcher kommutativer Diagramme
 \RequirePackage{amsbsy}									% Darstellung fettgedruckter mathematischer Symbole
 \RequirePackage{bm}
+\RequirePackage[scaled]{helvet}
 
 \RequirePackage[
 free-standing-units, 
@@ -577,7 +587,53 @@ multi-part-units = repeat
 \footnotesep 9\p@
 
 %%% Title Page
-\def\maketitle{\newpage
+\def\maketitle{
+\ifdiss{
+%Title Page Master
+\newpage
+\pagestyle{empty}
+\newgeometry{top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.5cm}
+ \null
+  \begingroup
+\def\and{\unskip, }
+  \parindent=\z@
+  \pretolerance=10000
+  \rightskip=\z@ \@plus 3cm
+  %%%%%%%%%%
+  \begin{center}
+	\includegraphics[width=1.0\textwidth]{Logos/Titelblatt_Kopfzeile-diss}
+				%\linespread{1.0}
+				\sffamily
+				\vfill
+				\LARGE\textbf{\\[13mm] \@title \\[15mm]}
+				\vfill
+				\Large{Der Fakultät für Elektrotechnik, Informatik und Mathematik}\\
+				\Large{der Universität Paderborn}\\[5mm]
+				\large{zur Erlangung des akademischen Grades\\[5mm]
+				\Large{Doktor der Ingenieurwissenschaften (Dr.-Ing.)}}\\[5mm]
+                \iffinal genehmigte\ \else vorgelegte\ \fi Dissertation \\
+                von \\[5mm]
+				\Large{\@author} \\[5mm]
+				\iffinal{
+                  \begin{tabular}[ht]{ll}
+				  \Large{Erster Gutachter:} & \Large{\@supervisora}\\
+                  \Large{Zweiter Gutachter:} & \Large{\@supervisorb}\\[5mm]
+                  \Large{Tag der mündlichen Prüfung:\ \ } & \Large{\@examdate}
+                  \end{tabular}\\[12mm]
+
+                  \Large{Paderborn \@publicationyear} \\[6mm]
+                  \Large{Diss. EIM-E/\@thesisnr}
+				}\else{
+                  \Large{geboren am \@birthdate\ in \@birthplace}
+                }\fi
+\vfill
+ \end{center}
+\endgroup
+\restoregeometry
+\newpage
+}\else{
+%Title Page Master
+\newpage
 \pagestyle{empty}
 \newgeometry{top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.5cm}
  \null
@@ -613,8 +669,8 @@ multi-part-units = repeat
 \endgroup
 \restoregeometry
 \newpage
+}\fi
 }
-
 
 %%% Declaration
 \def\makedeclaration{
