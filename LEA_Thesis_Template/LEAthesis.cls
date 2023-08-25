@@ -204,6 +204,8 @@ multi-part-units = repeat
 
 %% Text settings
 \RequirePackage{ifxetex,ifluatex}
+\RequirePackage{fix-cm}
+\RequirePackage{setspace}
 \RequirePackage{datetime2}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
@@ -605,7 +607,7 @@ multi-part-units = repeat
 				%\linespread{1.0}
 				\sffamily
 				\vfill
-				\LARGE\textbf{\\[13mm] \@title \\[15mm]}
+				{\Huge\begin{spacing}{1.1}\textbf{\\[13mm] \@title \\[15mm]\end{spacing}}}
 				\vfill
 				\Large{Der Fakultät für Elektrotechnik, Informatik und Mathematik}\\
 				\Large{der Universität Paderborn}\\[5mm]
@@ -653,7 +655,7 @@ multi-part-units = repeat
 \@supervisora}
 \vfill
  {\LARGE \textbf{\@thesistype} }\vskip3ex
- {\Huge \textbf{\@title}}
+ {\Huge \begin{spacing}{1.1} \textbf{\@title}\end{spacing}}
  \vfill
 {\Large \by}
 \vfill
@@ -678,7 +680,7 @@ multi-part-units = repeat
   \declarationtext\vskip5ex
   \begin{tabbing}
 Paderborn, \hspace{0.4cm} \= \rule[-0.15\baselineskip]{5cm}{.4pt}  \hspace{0.7cm}\= \rule[-0.15\baselineskip]{6cm}{.4pt}\\
-\renewcommand{\baselinestretch}{0.5}\normalsize
+% \renewcommand{\baselinestretch}{0.5}\normalsize
 \>\small{\datename}\>\small{\signature}
 \end{tabbing}
 }
