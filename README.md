@@ -5,7 +5,8 @@ This is a latex document template for LEA students, writing a project report a t
 Run 'main.tex' using an LaTeX editor, e.g. TexStudio.
 
 ## Overleaf
-Create a new Project by importing the ZIP file from the release section!
+Create a new Project by importing the ZIP file from the GitHub release section (see right side on this page)!
+
 Set the main document :
 `Menu` -> `Main Document` -> `main.tex`
 
