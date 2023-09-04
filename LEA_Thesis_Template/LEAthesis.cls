@@ -607,7 +607,7 @@ multi-part-units = repeat
 				%\linespread{1.0}
 				\sffamily
 				\vfill
-				{\Huge\begin{spacing}{1.1}\textbf{\\[13mm] \@title \\[15mm]\end{spacing}}}
+				{\Huge \begin{spacing}{1.1}\textbf{\\[13mm] \@title \\[15mm]}\end{spacing}}
 				\vfill
 				\Large{Der Fakultät für Elektrotechnik, Informatik und Mathematik}\\
 				\Large{der Universität Paderborn}\\[5mm]
@@ -640,14 +640,15 @@ multi-part-units = repeat
 \newgeometry{top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.5cm}
  \null
   \begingroup
-\def\and{\unskip, }
+  \def\and{\unskip, }
   \parindent=\z@
   \pretolerance=10000
   \rightskip=\z@ \@plus 3cm
   \ifenglish\includegraphics[height=2.5cm]{Logos/UPB_LOGO_GB_CMYK_15}\fi
   \ifdeutsch\includegraphics[height=2.5cm]{Logos/UPB_LOGO_CMYK_D_2012} \fi
   \hfill
-  \includegraphics[height=2cm]{Logos/logo_lea}\vskip5ex
+  \includegraphics[height=2cm]{Logos/logo_lea}
+  \\[5ex]
  \begin{center}
 \textbf{\titleinstitute\\[.2ex]
 \titleuniversity\\[.2ex]
