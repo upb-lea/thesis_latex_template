@@ -603,7 +603,9 @@ multi-part-units = repeat
   \rightskip=\z@ \@plus 3cm
   %%%%%%%%%%
   \begin{center}
-	\includegraphics[width=1.0\textwidth]{Logos/Titelblatt_Kopfzeile-diss}
+	\includegraphics[height=2.5cm]{Logos/UPB_Logo_DE_vierfarbig_CMYK}
+	\hfill
+	\includegraphics[height=2cm]{Logos/EIM}
 				%\linespread{1.0}
 				\sffamily
 				\vfill
@@ -644,8 +646,8 @@ multi-part-units = repeat
   \parindent=\z@
   \pretolerance=10000
   \rightskip=\z@ \@plus 3cm
-  \ifenglish\includegraphics[height=2.5cm]{Logos/UPB_LOGO_GB_CMYK_15}\fi
-  \ifdeutsch\includegraphics[height=2.5cm]{Logos/UPB_LOGO_CMYK_D_2012} \fi
+  \ifenglish\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK}\fi
+  \ifdeutsch\includegraphics[height=2.5cm]{Logos/UPB_Logo_DE_vierfarbig_CMYK} \fi
   \hfill
   \includegraphics[height=2cm]{Logos/logo_lea}
   \\[5ex]
