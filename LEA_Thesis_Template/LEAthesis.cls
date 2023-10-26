@@ -1,8 +1,8 @@
-% LEA-thesis DOCUMENT CLASS -- version 1.1 (18.08.23)
+% LEA-thesis DOCUMENT CLASS -- version 1.2 (26.10.23)
 %% Partitially based on svmono.cls and jku.cls
 %%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{LEAthesis}[2023/08/12 v11 LEA global LaTeX document class for theses]
+\ProvidesClass{LEAthesis}[2023/10/26 v12 LEA global LaTeX document class for theses]
 
 \LoadClass[12pt,twoside,a4paper]{book}
 
@@ -12,13 +12,14 @@
 \newif\ifonline
 \newif\ifdiss
 \newif\iffinal
+\newif\ifupbfonts
 
 \DeclareOption{english}{\englishtrue}
 \DeclareOption{deutsch}{\deutschtrue}
 \DeclareOption{online}{\onlinetrue}
 \DeclareOption{diss}{\disstrue}
 \DeclareOption{final}{\finaltrue}
-
+\DeclareOption{upbfonts}{\upbfontstrue}
 \ProcessOptions\relax
 
 
@@ -174,7 +175,7 @@
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 \RequirePackage{epsfig}
-\pdfminorversion=7
+%\pdfminorversion=7
 \RequirePackage{rotating}
 \RequirePackage[section]{placeins}% Grafiken in der dazugehÃ¶rigen section eingefÃŒgt
 \RequirePackage{lmodern,etoolbox,letltxmacro}
@@ -210,7 +211,7 @@ multi-part-units = repeat
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{upquote}
-\RequirePackage{microtype}
+%\RequirePackage{microtype}
 \RequirePackage{xspace}
 \RequirePackage{blindtext}
 \RequirePackage[parfill]{parskip}
@@ -219,7 +220,6 @@ multi-part-units = repeat
   pdfborder={0 0 0},
   breaklinks=true
 }
-
 \RequirePackage{csquotes}
 \ifdeutsch
     \RequirePackage[ngerman]{babel}
@@ -227,6 +227,49 @@ multi-part-units = repeat
 \ifenglish
     \RequirePackage[english]{babel}
 \fi
+
+\ifupbfonts
+\RequirePackage{fontspec}
+\setsansfont{SegoeUI}[
+    Path=./fonts/SegoeUI/,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+
+\setmainfont{SegoeUI}[
+    Path=./fonts/SegoeUI/,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+%
+% \setsansfont{Karla}[
+%     Path=./fonts/Karla/,
+%     Extension = .ttf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic
+%     ]
+%
+% \setmainfont{Karla}[
+%     Path=./fonts/Karla/,
+%     Extension = .ttf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic
+%     ]
+
+\fi
+
+
+
 
 \RequirePackage{algorithm}
 \RequirePackage{algpseudocode}

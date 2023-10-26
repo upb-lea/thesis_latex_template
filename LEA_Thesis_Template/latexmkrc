@@ -1,3 +1,6 @@
+$pdf_mode = 5;
+$dvi_mode = 0;
+$postscript_mode = 0;
 add_cus_dep( 'nlo', 'nls', 0, 'nlo2nls' );
 sub nlo2nls {system( "makeindex -t \"$_[0].nlg\" -s \"internal/nomencl.ist\"   -o \"$_[0].nls\" \"$_[0].nlo\"" );}
 
