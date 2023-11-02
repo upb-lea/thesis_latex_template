@@ -12,14 +12,14 @@
 \newif\ifonline
 \newif\ifdiss
 \newif\iffinal
-\newif\ifupbfonts
+%\newif\ifupbfonts
 
 \DeclareOption{english}{\englishtrue}
 \DeclareOption{deutsch}{\deutschtrue}
 \DeclareOption{online}{\onlinetrue}
 \DeclareOption{diss}{\disstrue}
 \DeclareOption{final}{\finaltrue}
-\DeclareOption{upbfonts}{\upbfontstrue}
+%\DeclareOption{upbfonts}{\upbfontstrue}
 \ProcessOptions\relax
 
 
@@ -228,28 +228,10 @@ multi-part-units = repeat
     \RequirePackage[english]{babel}
 \fi
 
-\ifupbfonts
-\RequirePackage{fontspec}
-\setsansfont{SegoeUI}[
-    Path=./fonts/SegoeUI/,
-    Extension = .ttf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic
-    ]
-
-\setmainfont{SegoeUI}[
-    Path=./fonts/SegoeUI/,
-    Extension = .ttf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic
-    ]
-%
-% \setsansfont{Karla}[
-%     Path=./fonts/Karla/,
+% \ifupbfonts
+% \RequirePackage{fontspec}
+% \setsansfont{SegoeUI}[
+%     Path=./fonts/SegoeUI/,
 %     Extension = .ttf,
 %     UprightFont=*-Regular,
 %     BoldFont=*-Bold,
@@ -257,16 +239,34 @@ multi-part-units = repeat
 %     BoldItalicFont=*-BoldItalic
 %     ]
 %
-% \setmainfont{Karla}[
-%     Path=./fonts/Karla/,
+% \setmainfont{SegoeUI}[
+%     Path=./fonts/SegoeUI/,
 %     Extension = .ttf,
 %     UprightFont=*-Regular,
 %     BoldFont=*-Bold,
 %     ItalicFont=*-Italic,
 %     BoldItalicFont=*-BoldItalic
 %     ]
-
-\fi
+% %
+% % \setsansfont{Karla}[
+% %     Path=./fonts/Karla/,
+% %     Extension = .ttf,
+% %     UprightFont=*-Regular,
+% %     BoldFont=*-Bold,
+% %     ItalicFont=*-Italic,
+% %     BoldItalicFont=*-BoldItalic
+% %     ]
+% %
+% % \setmainfont{Karla}[
+% %     Path=./fonts/Karla/,
+% %     Extension = .ttf,
+% %     UprightFont=*-Regular,
+% %     BoldFont=*-Bold,
+% %     ItalicFont=*-Italic,
+% %     BoldItalicFont=*-BoldItalic
+% %     ]
+%
+% \fi
 
 
 
