@@ -33,6 +33,7 @@
 \ifdiss\else\DeclareRobustCommand*{\matrnr}[1]{\gdef\@matrnr{#1}}\fi
 \DeclareRobustCommand*{\supervisora}[1]{\gdef\@supervisora{#1}}
 \DeclareRobustCommand*{\supervisorb}[1]{\gdef\@supervisorb{#1}}
+\DeclareRobustCommand*{\supervisorc}[1]{\gdef\@supervisorc{#1}}
 \ifdiss\else\DeclareRobustCommand*{\thesisnr}[1]{\gdef\@thesisnr{#1}}\fi
 \ifdiss\else\DeclareRobustCommand*{\filingdate}[1]{\gdef\@filingdate{#1}}\fi
 \ifdiss\DeclareRobustCommand*{\birthdate}[1]{\gdef\@birthdate{#1}}\fi
@@ -698,7 +699,7 @@ multi-part-units = repeat
 \textbf{\titleinstitute\\[.2ex]
 \titleuniversity\\[.2ex]
 \titledepartment\\[.2ex]
-\@supervisora}
+Dr.-Ing. Frank Schafmeister}
 \vfill
  {\LARGE \textbf{\@thesistype} }\vskip3ex
  {\Huge \begin{spacing}{1.1} \textbf{\@title}\end{spacing}}
@@ -711,7 +712,9 @@ multi-part-units = repeat
 \\[3cm]
 \vfill
  \end{center}
- {\large \supervisor: \@supervisorb }\vskip.1ex
+ {\large First examiner: \@supervisora }\vskip.1ex
+ {\large Second examiner: \@supervisorb }\vskip.1ex
+ {\large \supervisor: \@supervisorc }\vskip.1ex
  {\large \thesisnrname: \@thesisnr }\vskip.1ex
  {\large \filingdatename: \@filingdate }
 \endgroup
