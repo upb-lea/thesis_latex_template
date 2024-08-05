@@ -14,6 +14,9 @@ Set the main document :
 Change the compiler to `Latexmk`
 `Options` -> `Configure TeXstudio` -> `Generate` -> default compiler: `Latexmk`
 
+Change the bibliography program to `Biber`
+`Options` -> `Configure TeXstudio` -> `Generate` -> default bibliography program: `Biber`
+
 ## Using own packages
 Do not modify the `.cls` file. Add onw LaTeX packages into the `chapters/header.tex`-file.
 
