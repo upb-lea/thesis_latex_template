@@ -93,6 +93,8 @@
 \def\signature{Signature}%
 \def\solutionname{Solution}%
 \def\subclassname{{\it Subject Classifications\/}:}%
+\def\firstexaminer{First examiner}%
+\def\secondexaminer{Second examiner}%
 \def\supervisor{Supervisor}%
 \def\tablename{Tab.}%
 \def\thesisnrname{Thesis Nr.}%
@@ -152,6 +154,8 @@
  \def\signature{Unterschrift}%
  \def\solutionname{L\"osung}%
  \def\subclassname{{\it Subject Classifications\/}:}%
+ \def\firstexaminer{Erstprüfer}%
+ \def\secondexaminer{Zweitprüfer}%
  \def\supervisor{Betreuer}%
  \def\tablename{Tab.}%
  \def\thesisnrname{Nummer der Arbeit}%
@@ -712,8 +716,8 @@ Dr.-Ing. Frank Schafmeister}
 \\[3cm]
 \vfill
  \end{center}
- {\large First examiner: \@supervisora }\vskip.1ex
- {\large Second examiner: \@supervisorb }\vskip.1ex
+ {\large \firstexaminer: \@supervisora }\vskip.1ex
+ {\large \secondexaminer: \@supervisorb }\vskip.1ex
  {\large \supervisor: \@supervisorc }\vskip.1ex
  {\large \thesisnrname: \@thesisnr }\vskip.1ex
  {\large \filingdatename: \@filingdate }

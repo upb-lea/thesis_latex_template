@@ -19,3 +19,13 @@ Do not modify the `.cls` file. Add onw LaTeX packages into the `chapters/header.
 
 ## Preview
 ![](first_page.png)
+
+
+## Information for Linux users
+
+### Installation
+You might need to install some packages from the repositories. Arch Linux example here:
+ * texlive-langgerman (in case of using the german language)
+ 
+### Clean up auxiliary files
+Run the shell script `clean_temp_data.sh` in the subfolder to clean up all auxiliary files with one command.
