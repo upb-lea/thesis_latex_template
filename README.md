@@ -11,8 +11,7 @@ Set the main document :
 `Menu` -> `Main Document` -> `main.tex`
 
 ### TeXstudio
-Change the compiler to `Latexmk`
-`Options` -> `Configure TeXstudio` -> `Generate` -> default compiler: `Latexmk`
+Use the default compiler `PdfLaTeX`.
 
 Change the bibliography program to `Biber`
 `Options` -> `Configure TeXstudio` -> `Generate` -> default bibliography program: `Biber`
@@ -32,3 +31,7 @@ You might need to install some packages from the repositories. Arch Linux exampl
  
 ### Clean up auxiliary files
 Run the shell script `clean_temp_data.sh` in the subfolder to clean up all auxiliary files with one command.
+
+## Notes:
+ - .latexmkrc/latexmkrc is for the glossary and should not be removed
+
