@@ -34,4 +34,4 @@ Run the shell script `clean_temp_data.sh` in the subfolder to clean up all auxil
 
 ## Notes:
  - .latexmkrc/latexmkrc is for the glossary and should not be removed
-
+ - for creating PDF/A files, see [this example code](https://www.overleaf.com/latex/templates/creating-pdf-slash-a-and-pdf-slash-x-files-with-the-pdfx-package/bbbycnbyqhnm).
