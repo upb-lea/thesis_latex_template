@@ -703,7 +703,7 @@ multi-part-units = repeat
 \textbf{\titleinstitute\\[.2ex]
 \titleuniversity\\[.2ex]
 \titledepartment\\[.2ex]
-Dr.-Ing. Frank Schafmeister}
+Prof. Dr.-Ing. Jakub Kučka}
 \vfill
  {\LARGE \textbf{\@thesistype} }\vskip3ex
  {\Huge \begin{spacing}{1.1} \textbf{\@title}\end{spacing}}
