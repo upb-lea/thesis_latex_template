@@ -160,7 +160,7 @@
  \def\tablename{Tab.}%
  \def\thesisnrname{Nummer der Arbeit}%
 \def\theoremname{Theorem}%
-\def\titledepartment{Fachgebiet Elektrische Antriebstechnik und Leistungselektronik}%
+\def\titledepartment{Fachgebiet Leistungselektronik und Elektrische Antriebssysteme}%
 \def\titleinstitute{Institut für Elektrotechnik und Informationstechnik}%
 \def\titleuniversity{Universit\"at Paderborn}
 \fi
