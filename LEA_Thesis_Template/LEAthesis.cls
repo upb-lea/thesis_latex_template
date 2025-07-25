@@ -738,7 +738,7 @@ multi-part-units = repeat
   \ifenglish\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK}\fi
   \ifdeutsch\includegraphics[height=2.5cm]{Logos/UPB_Logo_DE_vierfarbig_CMYK} \fi
   \hfill
-  \includegraphics[height=2cm]{Logos/logo_lea}
+  \includegraphics[height=2.4cm]{Logos/logo_lea.png}\,
   \\[5ex]
  \begin{center}
 \textbf{\titleinstitute\\[.2ex]
