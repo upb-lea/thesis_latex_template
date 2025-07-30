@@ -32,6 +32,10 @@ You might need to install some packages from the repositories. Arch Linux exampl
 ### Clean up auxiliary files
 Run the shell script `clean_temp_data.sh` in the subfolder to clean up all auxiliary files with one command.
 
+### Troubleshooting
+ * The glossary also requires `texlive-binextra` (Arch Linux)
+
 ## Notes:
- - .latexmkrc/latexmkrc is for the glossary and should not be removed
- - for creating PDF/A files, see [this example code](https://www.overleaf.com/latex/templates/creating-pdf-slash-a-and-pdf-slash-x-files-with-the-pdfx-package/bbbycnbyqhnm).
+ * Use `latexmk` as compiler to build `Acronyms`, `Glossary` and `Nomenclature` sections
+ * `.latexmkrc` (Linux) / `latexmkrc` (Windows) is for the glossary and should not be removed 
+ * for creating PDF/A files, see [this example code](https://www.overleaf.com/latex/templates/creating-pdf-slash-a-and-pdf-slash-x-files-with-the-pdfx-package/bbbycnbyqhnm). 

@@ -452,7 +452,7 @@ multi-part-units = repeat
 \makeindex
 \RequirePackage[acronym,shortcuts,nopostdot,nogroupskip,section,nonumberlist]{glossaries}
 \renewcommand*{\glsgroupskip}{}
-\makenoidxglossaries
+\makeglossaries
 
 \ifenglish
 \RequirePackage[english,notintoc,refeq,norefpage]{nomencl}
@@ -503,8 +503,8 @@ multi-part-units = repeat
 \chapter{\listsname}
 \phantomsection\addcontentsline{toc}{section}{\listtablename}\listoftables
 \phantomsection\addcontentsline{toc}{section}{\listfigurename}\listoffigures
-\phantomsection\addcontentsline{toc}{section}{\acrname}\printnoidxglossaries
-%\phantomsection\addcontentsline{toc}{section}{\glossaryname}\printnoidxglossaries[title=\glossaryname]
+\phantomsection\addcontentsline{toc}{section}{\acrname}\printglossary[type=\acronymtype,title=\acrname]
+\phantomsection\addcontentsline{toc}{section}{\glossaryname}\printglossary[title=\glossaryname]
 \phantomsection\addcontentsline{toc}{section}{\nomname}\printnomenclature
 \printbibliography[heading=subbibintoc,title=\refname]
 }{\clearpage}
