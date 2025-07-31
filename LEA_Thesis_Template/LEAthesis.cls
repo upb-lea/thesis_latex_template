@@ -650,71 +650,119 @@ multi-part-units = repeat
   \pretolerance=10000
   \rightskip=\z@ \@plus 3cm
   \ifenglish{
-    %%%%%%%%%% english dissertation version
-  \begin{center}
-  	\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK}
-  	\hfill
-  	\includegraphics[height=2cm]{Logos/EIM}
-  	%\linespread{1.0}
-  	\sffamily
-  	\vfill
-  	{\Huge \begin{spacing}{1.1}\textbf{\\[13mm] \@title \\[15mm]}\end{spacing}}
-  	\vfill
-  	\large{A thesis submitted in fulfillment of the requirements}\\
-  	\Large{for the degree of Doktoringenieur (Dr.-Ing.)\\[5mm]
-  		\large{in the department}}\\[5mm]
-  	\Large{Power Electronics and Electrical Drives}\\[5mm]
-  	\iffinal approved\ \else submitted\ \fi dissertation \\
-  	by \\[5mm]
-  	\Large{\@author} \\[5mm]
-  	\iffinal{
-  		\begin{tabular}[ht]{ll}
-  			\Large{First examiner:} & \Large{\@supervisora}\\
-  			\Large{Second examiner:} & \Large{\@supervisorb}\\[5mm]
-  			\Large{Oral examination:\ \ } & \Large{\@examdate}
-  		\end{tabular}\\[12mm]
-  		
-  		\Large{Paderborn \@publicationyear} \\[6mm]
-  		\Large{Diss. EIM-E/\@thesisnr}
-  	}\else{
-  		\Large{born on \@birthdate\ in \@birthplace}
-  	}\fi
-  	\vfill
-  \end{center}
+	\iffinal{
+		\begin{center}
+			\begin{figure}\vspace{-1cm}
+				\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK} \hspace{5.7cm}
+				\includegraphics[height=1.7cm]{Logos/EIM_eng.pdf}
+			\end{figure}
+			$\:$ \newline
+			\vspace{2cm}
+			$\:$ \newline
+			\Large{\textbf{\textsf{\@title}\\}}
+			\vspace{2cm} 
+			
+			\textbf{\large From the Faculty of Electrical Engineering, Computer Science and Mathematics
+				of Paderborn University\\}
+			\vspace{0.5cm} 
+			{ \large to obtain the academic degree \\}
+			\vspace{0.5cm} 
+			{ \large Doctor of Engineering (Dr.-Ing.) }\\
+			\vspace{0.5cm} 
+			{ \large approved dissertation \\ by \\}
+			\vspace{0.5cm} 
+			{\large \textbf{\@author}}
+			\vspace{1.0cm}
+			\begin{flushleft}
+				\Large{First Reviewer: \hspace{0.8cm}\@supervisora \\
+					Second Reviewer: \hspace{0.49cm}\@supervisorb \\}
+				\vspace{0.8cm} 
+				\Large{Date of the dissertation defense: \@examdate}
+			\end{flushleft}
+			\vspace{0.6cm} 
+			\Large{Paderborn \@publicationyear \\}
+			\vspace{0.2cm}  
+			\Large{Diss. EIM-E/\@thesisnr}
+		\end{center}
+	}
+	\else{
+	}
+	\fi
+    
+
+    
   }\fi
-  \ifdeutsch{
-  	  %%%%%%%%%% german dissertation version
-  	\begin{center}
-  		\includegraphics[height=2.5cm]{Logos/UPB_Logo_DE_vierfarbig_CMYK}
-  		\hfill
-  		\includegraphics[height=2cm]{Logos/EIM}
-  		%\linespread{1.0}
-  		\sffamily
-  		\vfill
-  		{\Huge \begin{spacing}{1.1}\textbf{\\[13mm] \@title \\[15mm]}\end{spacing}}
-  		\vfill
-  		\Large{Der Fakultät für Elektrotechnik, Informatik und Mathematik}\\
-  		\Large{der Universität Paderborn}\\[5mm]
-  		\large{zur Erlangung des akademischen Grades\\[5mm]
-  			\Large{Doktor der Ingenieurwissenschaften (Dr.-Ing.)}}\\[5mm]
-  		\iffinal genehmigte\ \else vorgelegte\ \fi Dissertation \\
-  		von \\[5mm]
-  		\Large{\@author} \\[5mm]
-  		\iffinal{
-  			\begin{tabular}[ht]{ll}
-  				\Large{Erster Gutachter:} & \Large{\@supervisora}\\
-  				\Large{Zweiter Gutachter:} & \Large{\@supervisorb}\\[5mm]
-  				\Large{Tag der mündlichen Prüfung:\ \ } & \Large{\@examdate}
-  			\end{tabular}\\[12mm]
-  			
-  			\Large{Paderborn \@publicationyear} \\[6mm]
-  			\Large{Diss. EIM-E/\@thesisnr}
-  		}\else{
-  			\Large{geboren am \@birthdate\ in \@birthplace}
-  		}\fi
-  		\vfill
-  	\end{center}
-  }\fi
+	\ifdeutsch{
+		\iffinal{
+		  %%%%%%%%%% german dissertation final version
+			\begin{center}
+			\begin{figure}\vspace{-1cm}
+				\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK} \hfill
+				\includegraphics[height=1.7cm]{Logos/EIM}
+			\end{figure}
+			$\:$ \newline
+			\vspace{2cm}
+			$\:$ \newline
+			\Large{\textbf{\textsf{\@title}\\}}
+			\vspace{2cm} 
+			
+			\textbf{\large Von der Fakultät für Elektrotechnik, Informatik und Mathematik
+				der Universität Paderborn\\}
+			\vspace{0.5cm} 
+			{ \large zur Erlangung des akademischen Grades\\ }
+			\vspace{0.5cm} 
+			{ \large Doktor der Ingenieurwissenschaften (Dr.-Ing.) }\\
+			\vspace{0.5cm} 
+			{ \large genehmigte Dissertation \\ von \\}
+			\vspace{0.5cm} 
+			{\large \textbf{\@author}}
+			\vspace{1.0cm}
+			\begin{flushleft}
+				\Large{Erster Gutachter: \hspace{0.8cm}\@supervisora \\
+					Zweiter Gutachter: \hspace{0.49cm}\@supervisorb \\}
+				\vspace{0.8cm} 
+				\Large{Tag der mündlichen Prüfung: \@examdate}
+			\end{flushleft}
+			\vspace{0.6cm} 
+			\Large{Paderborn \@publicationyear \\}
+			\vspace{0.2cm}  
+			\Large{Diss. EIM-E/\@thesisnr}
+		\end{center}
+	}
+	\else{	
+		%%%%%%%% german version review version
+		\begin{center}
+			\begin{figure}\vspace{-1cm}
+				\includegraphics[height=2.5cm]{Logos/UPB_Logo_DE_vierfarbig_CMYK} \hfill
+				\includegraphics[height=1.7cm]{Logos/EIM}
+			\end{figure}
+			$\:$ \newline
+			\vspace{2cm}
+			$\:$ \newline
+			{\Large \textbf{\textsf{\@title}\\}}
+			\vspace{2cm} 
+			
+			\textbf{\large Der Fakultät für Elektrotechnik, Informatik und Mathematik\\
+				der Universität Paderborn\\}
+			\vspace{0.5cm} 
+			{ \large zur Erlangung des akademischen Grades\\ }
+			\vspace{0.5cm} 
+			{ \large Doktor der Ingenieurwissenschaften (Dr.-Ing.) }\\
+			\vspace{0.5cm} 
+			{ \large vorgelegte Dissertation}\\
+			\vspace{0.1cm}
+			{ \large von }
+			
+			\vspace{0.5cm} 
+			{\large \textbf{\@author}} \\
+			\vspace{0.1cm}  
+			{\large geboren am \@birthdate \, in \@birthplace}
+			\vspace{1.0cm}
+		\end{center}
+
+	}
+	\fi
+	}\fi
   
   
   
