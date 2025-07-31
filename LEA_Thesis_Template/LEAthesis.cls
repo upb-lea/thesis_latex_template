@@ -651,6 +651,7 @@ multi-part-units = repeat
   \rightskip=\z@ \@plus 3cm
   \ifenglish{
 	\iffinal{
+		%%%%%%%%% english dissertation final version
 		\begin{center}
 			\begin{figure}\vspace{-1cm}
 				\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK} \hspace{5.7cm}
@@ -686,6 +687,35 @@ multi-part-units = repeat
 		\end{center}
 	}
 	\else{
+		%%%%%%%%% english dissertation review version
+		\begin{center}
+			\begin{figure}\vspace{-1cm}
+				\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK} \hfill
+				\includegraphics[height=1.7cm]{Logos/EIM_eng.pdf}
+			\end{figure}
+			$\:$ \newline
+			\vspace{2cm}
+			$\:$ \newline
+			{\Large \textbf{\textsf{\@title}\\}}
+			\vspace{2cm} 
+			
+			\textbf{\large To the Faculty of Electrical Engineering, Computer Science and Mathematics
+				of Paderborn University\\}
+			\vspace{0.5cm} 
+			{ \large for the attainment of the academic degree\\ }
+			\vspace{0.5cm} 
+			{ \large Doctor of Engineering (Dr.-Ing.) }\\
+			\vspace{0.5cm} 
+			{ \large submitted dissertation}\\
+			\vspace{0.1cm}
+			{ \large by }
+			
+			\vspace{0.5cm} 
+			{\large \textbf{\@author}} \\
+			\vspace{0.1cm}  
+			{\large born on \@birthdate, in \@birthplace}
+			\vspace{1.0cm}
+		\end{center}
 	}
 	\fi
     
