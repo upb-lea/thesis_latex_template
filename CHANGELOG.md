@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
 - Update german/english dissertation title page
 - reduce glossary and acronym entries for better readability
+- Update LEA logo next to UPB logo
 
 ## [1.2.0] - 2025-07-25
 ### Updated

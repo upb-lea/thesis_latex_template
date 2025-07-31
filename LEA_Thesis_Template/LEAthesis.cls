@@ -654,7 +654,7 @@ multi-part-units = repeat
 		%%%%%%%%% english dissertation final version
 		\begin{center}
 			\begin{figure}\vspace{-1cm}
-				\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK} \hspace{5.7cm}
+				\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK} \hfill
 				\includegraphics[height=1.7cm]{Logos/EIM_eng.pdf}
 			\end{figure}
 			$\:$ \newline
@@ -813,11 +813,12 @@ multi-part-units = repeat
   \parindent=\z@
   \pretolerance=10000
   \rightskip=\z@ \@plus 3cm
-  \ifenglish\includegraphics[height=2.5cm]{Logos/UPB_Logo_ENG_coloured_CMYK}\fi
-  \ifdeutsch\includegraphics[height=2.5cm]{Logos/UPB_Logo_DE_vierfarbig_CMYK} \fi
   \hfill
-  \includegraphics[height=2.4cm]{Logos/logo_lea.png}\,
-  \\[5ex]
+  \ifdeutsch{\includegraphics[height=2.5cm]{Logos/UPB_LEA_DEU.pdf}}\fi
+  \ifenglish{\includegraphics[height=2.5cm]{Logos/UPB_LEA_ENG.pdf}}\fi 
+  \hfill
+  \vspace{3cm}
+  %\\[5ex]
  \begin{center}
 \textbf{\titleinstitute\\[.2ex]
 \titleuniversity\\[.2ex]
