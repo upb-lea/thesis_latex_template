@@ -66,7 +66,7 @@
 \def\examplename{Example}%
 \def\exercisename{Exercise}%
 \def\figurename{Fig.}%
- \def\filingdatename{Filing Date}%
+ \def\filingdatename{Submission Date}%
 \def\forewordname{Foreword}%
 \def\glossaryname{Glossary}%
 \def\keywordname{{\bf Key words:}}%
@@ -97,7 +97,7 @@
 \def\secondexaminer{Second examiner}%
 \def\supervisor{Supervisor}%
 \def\tablename{Tab.}%
-\def\thesisnrname{Thesis Nr.}%
+\def\thesisnrname{Thesis No.}%
 \def\theoremname{Theorem}%
 \def\titledepartment{Department of Power Electronics and Electrical Drives}%
 \def\titleinstitute{Institute of Electrical Engineering and Information Technology}%
