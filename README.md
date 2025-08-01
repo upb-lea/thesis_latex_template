@@ -39,3 +39,4 @@ Run the shell script `clean_temp_data.sh` in the subfolder to clean up all auxil
  * Use `latexmk` as compiler to build `Acronyms`, `Glossary` and `Nomenclature` sections
  * `.latexmkrc` (Linux) / `latexmkrc` (Windows) is for the glossary and should not be removed 
  * for creating PDF/A files, see [this example code](https://www.overleaf.com/latex/templates/creating-pdf-slash-a-and-pdf-slash-x-files-with-the-pdfx-package/bbbycnbyqhnm). 
+ * In dissertation mode, to distinguish between own and other literature, the keyword `ownliterature` must be added to your own contributions in the `.bib` file
