@@ -506,7 +506,24 @@ multi-part-units = repeat
 \phantomsection\addcontentsline{toc}{section}{\acrname}\printglossary[type=\acronymtype,title=\acrname]
 \phantomsection\addcontentsline{toc}{section}{\glossaryname}\printglossary[title=\glossaryname]
 \phantomsection\addcontentsline{toc}{section}{\nomname}\printnomenclature
+\ifdiss{
+	\ifdeutsch
+		\printbibheading[title={Literaturverzeichnis}]
+		\newrefcontext[labelprefix=OC]
+		\printbibliography[keyword=owncontribution, heading=subbibliography, title={Liste der begutachteten Publikationen mit eigenen Beiträgen (OC)}, resetnumbers=true]
+		\newrefcontext
+		\printbibliography[notkeyword=owncontribution, heading=subbibliography, title={Referenzen}, resetnumbers=true]
+	\else
+		\printbibheading[title={Bibliography}]
+		\newrefcontext[labelprefix=OC]
+		\printbibliography[keyword=owncontribution, heading=subbibliography, title={List of peer-reviewed publications with own contributions (OC)}, resetnumbers=true]
+		\newrefcontext
+		\printbibliography[notkeyword=owncontribution, heading=subbibliography, title={References}, resetnumbers=true]
+	\fi
+}
+\else{
 \printbibliography[heading=subbibintoc,title=\refname]
+}\fi
 }{\clearpage}
 %
 %
