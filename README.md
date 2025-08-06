@@ -11,7 +11,8 @@ Set the main document :
 `Menu` -> `Main Document` -> `main.tex`
 
 ### TeXstudio
-Use the default compiler `PdfLaTeX`.
+ * Prefer to use `Latexmk`, as this will also build the glossary section, acronym section and nomenclature section
+ * The compiler `PdfLaTeX` also works, but does not show the mentioned sections
 
 Change the bibliography program to `Biber`
 `Options` -> `Configure TeXstudio` -> `Generate` -> default bibliography program: `Biber`
@@ -40,3 +41,4 @@ Run the shell script `clean_temp_data.sh` in the subfolder to clean up all auxil
  * `.latexmkrc` (Linux) / `latexmkrc` (Windows) is for the glossary and should not be removed 
  * for creating PDF/A files, see [this example code](https://www.overleaf.com/latex/templates/creating-pdf-slash-a-and-pdf-slash-x-files-with-the-pdfx-package/bbbycnbyqhnm). 
  * In dissertation mode, to distinguish between own and other literature, the keyword `ownliterature` must be added to your own contributions in the `.bib` file. The keyword must be the only one.
+ * In case of your LaTeX kernel ist too old and needs an upgrade, use this [hints](https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution/55473#55473).
