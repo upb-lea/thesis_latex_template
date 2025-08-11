@@ -43,3 +43,4 @@ Run the shell script `clean_temp_data.sh` in the subfolder to clean up all auxil
  * In dissertation mode, to distinguish between own and other literature, the keyword `ownliterature` must be added to your own contributions in the `.bib` file. The keyword must be the only one.
  * In case of your LaTeX kernel ist too old and needs an upgrade, use this [hints](https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution/55473#55473).
  * `pearl` is required, [see also](https://miktex.org/kb/fix-script-engine-not-found).
+ * It is highly recommended to version your thesis with `git`.
