@@ -341,9 +341,9 @@ multi-part-units = repeat
     \renewcommand{\headrulewidth}{0pt}
 }
 \else
-\fancyhead[LE]{ \thechapter~\leftmark}
-\fancyhead[RO]{ \leftmark~\thechapter}
-\fancyhead[RE,LO]{\rightmark}
+\fancyhead[LE]{ \leftmark}
+\fancyhead[RO]{ \leftmark}
+\fancyhead[RE,LO]{}
 \fancyhead[C]{}
 \fancyfoot[RO,LE]{\thepage}%outer
 \fancyfoot[RE,LO]{}%inner
