@@ -509,16 +509,16 @@ multi-part-units = repeat
 \ifdiss{
 	\ifdeutsch
 		\printbibheading[title={Literaturverzeichnis}]
-		\newrefcontext[labelprefix=OC]
-		\printbibliography[keyword=owncontribution, heading=subbibliography, title={Liste der begutachteten Publikationen mit eigenen Beiträgen (OC)}, resetnumbers=true]
+		\newrefcontext[labelprefix=E]
+		\printbibliography[keyword=owncontribution, heading=subbibintoc, title={Liste der begutachteten Publikationen mit eigenen Beiträgen (E)}, resetnumbers=true]
 		\newrefcontext
-		\printbibliography[notkeyword=owncontribution, heading=subbibliography, title={Referenzen}, resetnumbers=true]
+		\printbibliography[notkeyword=owncontribution, heading=subbibintoc, title={Referenzen}, resetnumbers=true]
 	\else
 		\printbibheading[title={Bibliography}]
 		\newrefcontext[labelprefix=OC]
-		\printbibliography[keyword=owncontribution, heading=subbibliography, title={List of peer-reviewed publications with own contributions (OC)}, resetnumbers=true]
+		\printbibliography[keyword=owncontribution, heading=subbibintoc, title={List of peer-reviewed publications with own contributions (OC)}, resetnumbers=true]
 		\newrefcontext
-		\printbibliography[notkeyword=owncontribution, heading=subbibliography, title={References}, resetnumbers=true]
+		\printbibliography[notkeyword=owncontribution, heading=subbibintoc, title={References}, resetnumbers=true]
 	\fi
 }
 \else{

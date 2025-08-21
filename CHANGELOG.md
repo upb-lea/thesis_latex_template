@@ -8,8 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - Fix missing logos for dissertation
+- Fix missing refernces in table of contents
+
 ### Updated
 - remove subchapter name and chapter number in header
+- change german literature prefix for own contribution to 'E'
 
 ## [1.3.0] - 2025-08-01
 ### Updated
