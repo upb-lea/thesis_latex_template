@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Fix missing logos for dissertation
 - Fix missing refernces in table of contents
+- Fix german/english number separator
 
 ### Updated
 - remove subchapter name and chapter number in header

@@ -198,15 +198,28 @@
 \RequirePackage{bm}
 \RequirePackage[scaled]{helvet}
 
-\RequirePackage[
-free-standing-units, 
-space-before-unit, 
-number-unit-product = \,, 
-output-decimal-marker = {,},
-per-mode=fraction,
-separate-uncertainty = true,
-multi-part-units = repeat
-]{siunitx}
+
+\ifdeutsch
+	\RequirePackage[
+	free-standing-units, 
+	space-before-unit, 
+	number-unit-product = \,, 
+	output-decimal-marker = {,},
+	per-mode=fraction,
+	separate-uncertainty = true,
+	multi-part-units = repeat
+	]{siunitx}
+\else
+	\RequirePackage[
+	free-standing-units, 
+	space-before-unit, 
+	number-unit-product = \,, 
+	output-decimal-marker = {.},
+	per-mode=fraction,
+	separate-uncertainty = true,
+	multi-part-units = repeat
+	]{siunitx}
+\fi
 
 %% Text settings
 \RequirePackage{ifxetex,ifluatex}
