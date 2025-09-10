@@ -529,7 +529,7 @@
 	\else
 		\printbibheading[title={Bibliography}]
 		\newrefcontext[labelprefix=OC]
-		\printbibliography[keyword=owncontribution, heading=subbibintoc, title={List of peer-reviewed publications with own contributions (OC)}, resetnumbers=true]
+		\printbibliography[keyword=owncontribution, heading=subbibintoc, title={List of Peer-Reviewed Publications with Own Contributions (OC)}, resetnumbers=true]
 		\newrefcontext
 		\printbibliography[notkeyword=owncontribution, heading=subbibintoc, title={References}, resetnumbers=true]
 	\fi
