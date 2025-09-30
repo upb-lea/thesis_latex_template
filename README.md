@@ -40,7 +40,7 @@ Run the shell script `clean_temp_data.sh` in the subfolder to clean up all auxil
  * Use `latexmk` as compiler to build `Acronyms`, `Glossary` and `Nomenclature` sections
  * `.latexmkrc` (Linux) / `latexmkrc` (Windows) is for the glossary and should not be removed 
  * for creating PDF/A files, see [this example code](https://www.overleaf.com/latex/templates/creating-pdf-slash-a-and-pdf-slash-x-files-with-the-pdfx-package/bbbycnbyqhnm). 
- * In dissertation mode, to distinguish between own and other literature, the keyword `ownliterature` must be added to your own contributions in the `.bib` file. The keyword must be the only one.
+ * In dissertation mode, to distinguish between own and other literature, the keyword `owncontribution` must be added to your own contributions in the `.bib` file. The keyword must be the only one.
  * In case of your LaTeX kernel ist too old and needs an upgrade, use this [hints](https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution/55473#55473).
  * `pearl` is required, [see also](https://miktex.org/kb/fix-script-engine-not-found).
  * It is highly recommended to version your thesis with `git`.
