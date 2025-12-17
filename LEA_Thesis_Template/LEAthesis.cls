@@ -208,8 +208,7 @@
 	per-mode=fraction,
 	separate-uncertainty = true,
 	multi-part-units = repeat,
-	exponent-product = \ensuremath{\cdot},
-	output-product = \ensuremath{\cdot}
+	exponent-product = \ensuremath{\cdot}
 	]{siunitx}
 \else
 	\RequirePackage[
@@ -220,8 +219,7 @@
 	per-mode=fraction,
 	separate-uncertainty = true,
 	multi-part-units = repeat,
-	exponent-product = \ensuremath{\cdot},
-	output-product = \ensuremath{\cdot}
+	exponent-product = \ensuremath{\cdot}
 	]{siunitx}
 \fi
 
