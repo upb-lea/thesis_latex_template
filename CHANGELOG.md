@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
 - Use capitalized key words in 'List of Peer-Reviewed Publications ...'
 
+### Fixed
+- Usage of `\cdot` instead of `x` for multiplications inside SI package
+
 ## [1.3.1] - 2025-09-09
 ### Fixed
 - Fix missing logos for dissertation

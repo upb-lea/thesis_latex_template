@@ -207,7 +207,9 @@
 	output-decimal-marker = {,},
 	per-mode=fraction,
 	separate-uncertainty = true,
-	multi-part-units = repeat
+	multi-part-units = repeat,
+	exponent-product = \ensuremath{\cdot},
+	output-product = \ensuremath{\cdot}
 	]{siunitx}
 \else
 	\RequirePackage[
@@ -217,7 +219,9 @@
 	output-decimal-marker = {.},
 	per-mode=fraction,
 	separate-uncertainty = true,
-	multi-part-units = repeat
+	multi-part-units = repeat,
+	exponent-product = \ensuremath{\cdot},
+	output-product = \ensuremath{\cdot}
 	]{siunitx}
 \fi
 
