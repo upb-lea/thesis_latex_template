@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Usage of `\cdot` instead of `x` for multiplications inside SI package
+- Fix spacing in table of contents
 
 ## [1.3.1] - 2025-09-09
 ### Fixed

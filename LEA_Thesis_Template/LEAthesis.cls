@@ -615,9 +615,9 @@
 \newdimen\tocparatotal
 \newdimen\tocsubparanum
 \tocchpnum=20\p@            % chapter {\bf 88.} \@plus 5.3\p@
-\tocsecnum=22.5\p@          % section 88.8. plus 4.722\p@
-\tocsubsecnum=30.5\p@       % subsection 88.8.8 plus 4.944\p@
-\tocsubsubsecnum=38\p@      % subsubsection 88.8.8.8 plus 4.666\p@
+\tocsecnum=30\p@          % section 88.8. plus 4.722\p@
+\tocsubsecnum=38\p@       % subsection 88.8.8 plus 4.944\p@
+\tocsubsubsecnum=45.5\p@      % subsubsection 88.8.8.8 plus 4.666\p@
 \tocparanum=45\p@           % paragraph 88.8.8.8.8 plus 3.888\p@
 \tocsubparanum=53\p@        % subparagraph 88.8.8.8.8.8 plus 4.11\p@
 \def\calctocindent{%
