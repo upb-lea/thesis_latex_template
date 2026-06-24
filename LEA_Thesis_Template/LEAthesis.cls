@@ -301,6 +301,7 @@
 %\RequirePackage[backend=biber,style=alphabetic,giveninits=true,maxnames=99,minnames=3,natbib,autopunct,backref=false,doi=false,isbn=false,url=true,backrefstyle=three+,defernumbers=true]{biblatex}
 
 \RequirePackage[belowskip=12pt,aboveskip=4pt,figurename=\figurename,tablename=\tablename,labelfont=bf]{caption}
+\captionsetup{format=hang, justification=justified, singlelinecheck=true}  
 
 \RequirePackage{subcaption}
 \RequirePackage[countmax]{subfloat}
