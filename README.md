@@ -5,7 +5,7 @@ This is a latex document template for LEA students, writing a project report a t
 Run `main.tex` using an LaTeX editor, e.g. TexStudio.
 
 ### Overleaf
-Create a new Project by importing the ZIP file from the GitHub release section (see right side on this page)!
+Create a new Project by importing the ZIP file. The subfolder `LEA_Thesis_Template` from this repo must be zipped! (not the repo itself!)
 
 Set the main document :
 `Menu` -> `Main Document` -> `main.tex`
@@ -45,3 +45,4 @@ Run the shell script `clean_temp_data.sh` in the subfolder to clean up all auxil
  * In case of your LaTeX kernel ist too old and needs an upgrade, use this [hints](https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution/55473#55473).
  * `pearl` is required, [see also](https://miktex.org/kb/fix-script-engine-not-found).
  * It is highly recommended to version your thesis with `git`.
+ * If the abbreviations and glossary is missing when using overleaf, make sure that all main (`main.tex`, `LEAthesis.cls`, `.latexmkrc`, ...) are in the root directory, NOT in a subdirectory `LEA_Thesis_Template` (See Overleaf section).
