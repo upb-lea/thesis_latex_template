@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
 - Use capitalized key words in 'List of Peer-Reviewed Publications ...'
 - Improve caption behavior in single line (centered) and multiline (left side arrangement)
+- Update declaration of authorship
 
 ### Fixed
 - Usage of `\cdot` instead of `x` for multiplications inside SI package

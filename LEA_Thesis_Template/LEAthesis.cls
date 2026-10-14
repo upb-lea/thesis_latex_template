@@ -60,7 +60,7 @@
 \def\corollaryname{Corollary}%
 \def\datename{Date}%
 \def\declaration{Declaration of Authorship}%
-\def\declarationtext{I declare that I have authored this thesis independently, that I have not used other than the declared sources, and that I have explicitly marked all material which has been quoted either literally or by content from the used sources. This paper was not previously presented to another examination board and has not been published.}%
+\def\declarationtext{I hereby declare that I have written this thesis independently and have not used any sources	or aids other than those specified. I also declare that I have complied with the general	principles of scientific work as laid down in the Guidelines for Safeguarding Good Research	Practice of the German Research Foundation.}%
 \def\definitionname{Definition}%
 \def\emailname{e-mail}%
 \def\examplename{Example}%
@@ -121,7 +121,7 @@
  \def\corollaryname{Korollar}%
  \def\datename{Datum}%
  \def\declaration{Eidesstattliche Erklärung}%
- \def\declarationtext{Ich versichere, dass ich die vorliegende wissenschaftliche Arbeit selbstständig verfasst und keine anderen als die angegebenen Hilfsmittel verwendet habe. Die Stellen der Arbeit, die anderen Werken dem Wortlaut oder dem Sinn nach entnommen sind, wurden unter Angabe der Quelle als Entlehnung deutlich gemacht. Das gleiche gilt auch für beigegebene Skizzen und Darstellungen. Diese Arbeit hat in gleicher oder ähnlicher Form meines Wissens nach noch keiner Prüfungsbehörde vorgelegen.}%
+ \def\declarationtext{Hiermit erkläre ich, dass ich die vorliegende Arbeit selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. Außerdem erkläre ich, dass ich die allgemeinen Prinzipien wissenschaftlicher Arbeit, wie sie in den Leitlinien zur Sicherung guter wissenschaftlicher Praxis der Deutschen Forschungsgemeinschaft festgelegt sind, befolgt	habe.}%
  \def\definitionname{Definition}%
  \def\emailname{E-mail}%
  \def\examplename{Beispiel}%
